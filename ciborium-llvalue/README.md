@@ -1,3 +1,5 @@
+# THIS IS A TEMPORARY FORK JUST TO HAVE THE CHANGES PROPOSED IN [#25](https://github.com/enarx/ciborium/pull/25) RELEASED. DO NOT USE THIS ONE BUT USE [ciborium](https://github.com/enarx/ciborium/).
+
 [![Workflow Status](https://github.com/enarx/ciborium/workflows/test/badge.svg)](https://github.com/enarx/ciborium/actions?query=workflow%3A%22test%22)
 [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/enarx/ciborium.svg)](https://isitmaintained.com/project/enarx/ciborium "Average time to resolve an issue")
 [![Percentage of issues still open](https://isitmaintained.com/badge/open/enarx/ciborium.svg)](https://isitmaintained.com/project/enarx/ciborium "Percentage of issues still open")
@@ -71,8 +73,8 @@ parsed by simply doing `Decoder::pull()` to parse the child items.
 ### Example
 
 ```rust
-use ciborium_ll::{Decoder, Header};
-use ciborium_io::Read as _;
+use ciborium_llvalue::{Decoder, Header};
+use ciborium_iovalue::Read as _;
 
 let input = b"\x6dHello, World!";
 let mut decoder = Decoder::from(&input[..]);
@@ -112,8 +114,8 @@ on the wire for you.
 ### Example
 
 ```rust
-use ciborium_ll::{Encoder, Header};
-use ciborium_io::Write as _;
+use ciborium_llvalue::{Encoder, Header};
+use ciborium_iovalue::Write as _;
 
 let mut buffer = [0u8; 19];
 let mut encoder = Encoder::from(&mut buffer[..]);

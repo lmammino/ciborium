@@ -66,8 +66,8 @@
 //! ## Example
 //!
 //! ```rust
-//! use ciborium_ll::{Decoder, Header};
-//! use ciborium_io::Read as _;
+//! use ciborium_llvalue::{Decoder, Header};
+//! use ciborium_iovalue::Read as _;
 //!
 //! let input = b"\x6dHello, World!";
 //! let mut decoder = Decoder::from(&input[..]);
@@ -107,8 +107,8 @@
 //! ## Example
 //!
 //! ```rust
-//! use ciborium_ll::{Encoder, Header};
-//! use ciborium_io::Write as _;
+//! use ciborium_llvalue::{Encoder, Header};
+//! use ciborium_iovalue::Write as _;
 //!
 //! let mut buffer = [0u8; 19];
 //! let mut encoder = Encoder::from(&mut buffer[..]);

@@ -9,8 +9,8 @@ pub use error::Error;
 use alloc::string::ToString;
 use core::convert::TryFrom;
 
-use ciborium_io::Write;
-use ciborium_ll::*;
+use ciborium_iovalue::Write;
+use ciborium_llvalue::*;
 use serde::{ser, Serialize as _};
 
 struct Serializer<W: Write>(Encoder<W>);

@@ -1,6 +1,6 @@
 use super::*;
 
-use ciborium_io::Read;
+use ciborium_iovalue::Read;
 
 use core::marker::PhantomData;
 

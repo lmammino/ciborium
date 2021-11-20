@@ -1,6 +1,6 @@
 use super::*;
 
-use ciborium_io::Write;
+use ciborium_iovalue::Write;
 
 /// An encoder for serializing CBOR items
 ///

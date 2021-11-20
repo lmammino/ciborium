@@ -6,7 +6,7 @@ use alloc::{boxed::Box, string::String, vec::Vec};
 use core::convert::{TryFrom, TryInto};
 use core::iter::Peekable;
 
-use ciborium_ll::tag;
+use ciborium_llvalue::tag;
 use serde::de::{self, Deserializer as _};
 
 impl<'a> From<Integer> for de::Unexpected<'a> {

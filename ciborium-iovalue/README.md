@@ -1,3 +1,5 @@
+# THIS IS A TEMPORARY FORK JUST TO HAVE THE CHANGES PROPOSED IN [#25](https://github.com/enarx/ciborium/pull/25) RELEASED. DO NOT USE THIS ONE BUT USE [ciborium](https://github.com/enarx/ciborium/).
+
 [![Workflow Status](https://github.com/enarx/ciborium/workflows/test/badge.svg)](https://github.com/enarx/ciborium/actions?query=workflow%3A%22test%22)
 [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/enarx/ciborium.svg)](https://isitmaintained.com/project/enarx/ciborium "Average time to resolve an issue")
 [![Percentage of issues still open](https://isitmaintained.com/badge/open/enarx/ciborium.svg)](https://isitmaintained.com/project/enarx/ciborium "Percentage of issues still open")

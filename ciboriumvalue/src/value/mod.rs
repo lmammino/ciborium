@@ -508,7 +508,10 @@ impl From<u128> for Value {
             bytes = &bytes[1..];
         }
 
-        Value::Tag(ciborium_ll::tag::BIGPOS, Value::Bytes(bytes.into()).into())
+        Value::Tag(
+            ciborium_llvalue::tag::BIGPOS,
+            Value::Bytes(bytes.into()).into(),
+        )
     }
 }
 
@@ -520,8 +523,8 @@ impl From<i128> for Value {
         }
 
         let (tag, raw) = match value.is_negative() {
-            true => (ciborium_ll::tag::BIGNEG, value as u128 ^ !0),
-            false => (ciborium_ll::tag::BIGPOS, value as u128),
+            true => (ciborium_llvalue::tag::BIGNEG, value as u128 ^ !0),
+            false => (ciborium_llvalue::tag::BIGPOS, value as u128),
         };
 
         let mut bytes = &raw.to_be_bytes()[..];

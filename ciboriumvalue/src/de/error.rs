@@ -46,12 +46,12 @@ impl<T> From<T> for Error<T> {
     }
 }
 
-impl<T> From<ciborium_ll::Error<T>> for Error<T> {
+impl<T> From<ciborium_llvalue::Error<T>> for Error<T> {
     #[inline]
-    fn from(value: ciborium_ll::Error<T>) -> Self {
+    fn from(value: ciborium_llvalue::Error<T>) -> Self {
         match value {
-            ciborium_ll::Error::Io(x) => Self::Io(x),
-            ciborium_ll::Error::Syntax(x) => Self::Syntax(x),
+            ciborium_llvalue::Error::Io(x) => Self::Io(x),
+            ciborium_llvalue::Error::Syntax(x) => Self::Syntax(x),
         }
     }
 }

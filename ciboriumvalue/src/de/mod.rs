@@ -9,8 +9,8 @@ pub use error::Error;
 use alloc::{string::String, vec::Vec};
 use core::convert::TryFrom;
 
-use ciborium_io::Read;
-use ciborium_ll::*;
+use ciborium_iovalue::Read;
+use ciborium_llvalue::*;
 use serde::{de, de::Deserializer as _, forward_to_deserialize_any};
 
 trait Expected<E: de::Error> {

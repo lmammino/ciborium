@@ -1,7 +1,7 @@
 [workspace]
 exclude = [ ".gitignore", ".github/*" ]
 members = [
-    "ciborium",
-    "ciborium-io",
-    "ciborium-ll",
+    "ciboriumvalue",
+    "ciborium-iovalue",
+    "ciborium-llvalue",
 ]
