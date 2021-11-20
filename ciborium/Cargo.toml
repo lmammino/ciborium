@@ -1,12 +1,12 @@
 [package]
-name = "ciborium"
+name = "ciboriumvalue"
 version = "0.1.0"
 authors = ["Nathaniel McCallum <npmccallum@redhat.com>"]
 license = "Apache-2.0"
 edition = "2018"
 homepage = "https://github.com/enarx/ciborium"
 repository = "https://github.com/enarx/ciborium"
-description = "serde implementation of CBOR using ciborium-basic"
+description = "serde implementation of CBOR using ciborium-basic (tmp fork, do not use)"
 readme = "README.md"
 keywords = ["cbor", "serde"]
 categories = ["data-structures", "embedded", "encoding", "no-std", "parsing"]

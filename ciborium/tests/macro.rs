@@ -2,7 +2,7 @@
 
 extern crate alloc;
 
-use ciborium::{
+use ciboriumvalue::{
     cbor,
     value::{Float, Integer, Value, Value::Null},
 };

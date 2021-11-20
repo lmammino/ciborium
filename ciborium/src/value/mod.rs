@@ -52,7 +52,7 @@ impl Value {
     /// Returns true if the `Value` is an `Integer`. Returns false otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Integer(17.into());
     ///
@@ -66,7 +66,7 @@ impl Value {
     /// Returns None otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Integer(17.into());
     ///
@@ -83,7 +83,7 @@ impl Value {
     /// Returns true if the `Value` is a `Bytes`. Returns false otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Bytes(vec![104, 101, 108, 108, 111]);
     ///
@@ -97,7 +97,7 @@ impl Value {
     /// Returns None otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Bytes(vec![104, 101, 108, 108, 111]);
     ///
@@ -114,7 +114,7 @@ impl Value {
     /// Returns None otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let mut value = Value::Bytes(vec![104, 101, 108, 108, 111]);
     /// value.as_bytes_mut().unwrap().clear();
@@ -131,7 +131,7 @@ impl Value {
     /// Returns true if the `Value` is a `Float`. Returns false otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Float(17.0.into());
     ///
@@ -145,7 +145,7 @@ impl Value {
     /// Returns None otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Float(17.0.into());
     ///
@@ -162,7 +162,7 @@ impl Value {
     /// Returns true if the `Value` is a `Text`. Returns false otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Text(String::from("hello"));
     ///
@@ -176,7 +176,7 @@ impl Value {
     /// Returns None otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Text(String::from("hello"));
     ///
@@ -194,7 +194,7 @@ impl Value {
     /// Returns None otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let mut value = Value::Text(String::from("hello"));
     /// value.as_text_mut().unwrap().clear();
@@ -212,7 +212,7 @@ impl Value {
     /// otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Text(String::from("hello"));
     ///
@@ -228,7 +228,7 @@ impl Value {
     /// Returns true if the `Value` is a `Bool`. Returns false otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Bool(false);
     ///
@@ -242,7 +242,7 @@ impl Value {
     /// otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Bool(false);
     ///
@@ -258,7 +258,7 @@ impl Value {
     /// Returns true if the `Value` is a `Null`. Returns false otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Null;
     ///
@@ -271,7 +271,7 @@ impl Value {
     /// Returns true if the `Value` is a `Tag`. Returns false otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Tag(61, Box::from(Value::Null));
     ///
@@ -285,7 +285,7 @@ impl Value {
     /// Returns None otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Tag(61, Box::from(Value::Bytes(vec![104, 101, 108, 108, 111])));
     ///
@@ -304,7 +304,7 @@ impl Value {
     /// to the tag `Value`. Returns None otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let mut value = Value::Tag(61, Box::from(Value::Bytes(vec![104, 101, 108, 108, 111])));
     ///
@@ -323,7 +323,7 @@ impl Value {
     /// Returns true if the `Value` is an Array. Returns false otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Array(
     ///     vec![
@@ -342,7 +342,7 @@ impl Value {
     /// otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Array(
     ///     vec![
@@ -365,7 +365,7 @@ impl Value {
     /// Returns None otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let mut value = Value::Array(
     ///     vec![
@@ -387,7 +387,7 @@ impl Value {
     /// Returns true if the `Value` is a Map. Returns false otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Map(
     ///     vec![
@@ -405,7 +405,7 @@ impl Value {
     /// otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let value = Value::Map(
     ///     vec![
@@ -433,7 +433,7 @@ impl Value {
     /// Returns None otherwise.
     ///
     /// ```
-    /// # use ciborium::value::Value;
+    /// # use ciboriumvalue::value::Value;
     /// #
     /// let mut value = Value::Map(
     ///     vec![

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 
-use ciborium::{de::from_reader, de::Error, value::Value};
+use ciboriumvalue::{de::from_reader, de::Error, value::Value};
 use rstest::rstest;
 
 #[rstest(bytes, error,

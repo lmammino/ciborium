@@ -105,7 +105,7 @@ pub mod value;
 /// so you should handle the error appropriately.
 ///
 /// ```
-/// use ciborium::cbor;
+/// use ciboriumvalue::cbor;
 ///
 /// let value = cbor!({
 ///     "code" => 415,

@@ -6,7 +6,7 @@ use std::io::Write;
 use std::os::raw::c_int;
 use std::os::unix::io::{FromRawFd, RawFd};
 
-use ciborium::{de::from_reader, value::Value};
+use ciboriumvalue::{de::from_reader, value::Value};
 use rand::Rng;
 
 const ITERATIONS: usize = 128 * 1024;

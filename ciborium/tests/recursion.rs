@@ -6,7 +6,7 @@
 //! indicate nested container types could cause the stack to overflow. We
 //! test each of these types here to ensure there is no stack overflow.
 
-use ciborium::{
+use ciboriumvalue::{
     de::{from_reader, Error},
     value::Value,
 };

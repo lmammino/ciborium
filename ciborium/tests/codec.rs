@@ -6,8 +6,8 @@ use std::collections::{BTreeMap, HashMap};
 use std::convert::TryFrom;
 use std::fmt::Debug;
 
-use ciborium::value::{Float, Value};
-use ciborium::{cbor, de::from_reader, ser::into_writer};
+use ciboriumvalue::value::{Float, Value};
+use ciboriumvalue::{cbor, de::from_reader, ser::into_writer};
 
 use rstest::rstest;
 use serde::{Deserialize, Serialize};

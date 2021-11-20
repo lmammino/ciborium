@@ -31,7 +31,7 @@ impl Integer {
     /// Gets a reference to the internal value stored in the integer.
     ///
     /// ```
-    /// # use ciborium::value::Integer;
+    /// # use ciboriumvalue::value::Integer;
     /// #
     /// let num: Integer = 17.into();
     ///

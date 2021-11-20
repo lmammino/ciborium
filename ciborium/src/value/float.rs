@@ -18,7 +18,7 @@ impl Float {
     /// Gets a reference to the internal value stored in the integer.
     ///
     /// ```
-    /// # use ciborium::value::Float;
+    /// # use ciboriumvalue::value::Float;
     /// #
     /// let num: Float = 17.0.into();
     ///

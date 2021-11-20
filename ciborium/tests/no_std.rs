@@ -7,7 +7,7 @@ extern crate alloc;
 
 use alloc::vec::Vec;
 
-use ciborium::{de::from_reader, ser::into_writer};
+use ciboriumvalue::{de::from_reader, ser::into_writer};
 
 #[test]
 fn decode() {

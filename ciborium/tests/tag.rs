@@ -2,7 +2,7 @@
 
 extern crate alloc;
 
-use ciborium::{de::from_reader, ser::into_writer, tag::*, value::Value};
+use ciboriumvalue::{de::from_reader, ser::into_writer, tag::*, value::Value};
 use rstest::rstest;
 use serde::{Deserialize, Serialize};
 
